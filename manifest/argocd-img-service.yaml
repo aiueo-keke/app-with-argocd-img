@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
-  metadata:Add commentMore actions
-name: argocd-service
+metadata:
+  name: argocd-service
 spec:
   selector:
     app.kubernetes.io/name: argocd-web-img
