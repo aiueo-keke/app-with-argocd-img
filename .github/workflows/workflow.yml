@@ -60,4 +60,4 @@ jobs:
 
       - name: Change version in DEPLOY
         run: |
-          sed -i "s%jyoungmin/app-with-argocd-img:VERSION%jyoungmin/app-with-argocd-img:${GITHUB_SHA}%" ./manifest/argocd-img-deployment.yml
+          sed -i "s%jyoungmin/app-with-argocd-img:VERSION%jyoungmin/app-with-argocd-img:${{ github.sha }}%" ./manifest/argocd-img-deployment.yml
