@@ -4,4 +4,4 @@ resources:
 images:
   - name: nginx
     newName: nginx
-    newTag: "9450353"
+    newTag: "jyoungmin/app-with-argocd-img:9450353"
