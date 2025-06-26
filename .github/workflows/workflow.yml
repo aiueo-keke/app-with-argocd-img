@@ -70,6 +70,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          repository: aiueo-keke/app-with-argocd-img-manifest
           ref: main
           token: ${{ secrets.GH_TOKEN }}
 
