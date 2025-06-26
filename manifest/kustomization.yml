@@ -1,0 +1,7 @@
+resources:
+  - argocd-img-deployment.yml
+  - argocd-img-service.yaml
+images:
+  - name: image
+    newName: nginx-nn
+    newTag: "1.25"
