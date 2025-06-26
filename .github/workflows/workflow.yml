@@ -5,8 +5,8 @@ on:
   push:
     branches:
       - main
-    paths-ignore:
-      - 'manifest/**'
+#    paths-ignore:
+#      - 'manifest/**'
 
 jobs:
   ci:
@@ -74,7 +74,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          repository: aiueo-keke/app-with-argocd-img-manifest
+#          repository: aiueo-keke/app-with-argocd-img-manifest
           ref: main
           token: ${{ secrets.GH_TOKEN }}
 
