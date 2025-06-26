@@ -60,4 +60,13 @@ jobs:
 
       - name: Change version in DEPLOY
         run: |
-          sed -i "s%jyoungmin/app-with-argocd-img:VERSION%jyoungmin/app-with-argocd-img:${{ github.sha }}%" ./manifest/argocd-img-deployment.yml
+          sed -i "s%jyoungmin/app-with-argocd-img:[a-f0-9]%jyoungmin/app-with-argocd-img:${{ github.sha}}%" ./manifest/argocd-img-deployment.yml
+          
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "youngmin.jung@outlook.com"
+          git config --local user.name "Youngmin Jung"
+          git add .
+          git commit -m "Update image tag"
+          git push
