@@ -2,6 +2,6 @@ resources:
   - argocd-img-deployment.yml
   - argocd-img-service.yaml
 images:
-  - name: image
+  - name: jyoungmin/app-with-argocd-img:ce1aafc
     newName: nginx-nn
     newTag: "1.25"
