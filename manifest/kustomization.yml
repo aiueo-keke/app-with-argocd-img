@@ -1,6 +1,7 @@
 resources:
   - argocd-img-deployment.yml
   - argocd-img-service.yaml
+  - sealed-secret.yaml
 images:
   - name: nginx
     newName: jyoungmin/app-with-argocd-img
